@@ -1,0 +1,17 @@
+@import '../../variable.scss';
+
+html {
+    font-size: 10px;
+    background-color: $bc-html;
+    a {
+        text-decoration: none;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+}

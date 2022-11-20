@@ -1,0 +1,15 @@
+@import '../../variable.scss';
+
+.items {
+    width: 45rem;
+    background-color: grey;
+    padding: 2rem 2rem;
+    &__title {
+        text-align: center;
+        color: $word-color;
+        font-size: 1.9rem;
+    }
+    &__ul {
+        list-style: none;
+    }
+}

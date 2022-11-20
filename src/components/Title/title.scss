@@ -1,0 +1,43 @@
+@import '../../variable.scss';
+
+.title {
+    margin: 0 auto;
+    height: 3rem;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: $bc-header;
+    &__logo {
+        width: 3rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__head {
+        color: $title-color;
+        font-size: 2.5rem;
+        font-family: $font-title;
+        &--word {
+            font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: $word-color;
+            font-size: 2.6rem;
+            border: 1px solid $word-color;
+            padding: .3rem .4rem;
+            border-radius: 8px;
+            transition: all .2s ease;
+            &:hover {
+                display: inline-block;
+                transform: rotate(-10deg);
+                color: white;
+            }
+        }
+    }
+    &__burger {
+        width: 3rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
