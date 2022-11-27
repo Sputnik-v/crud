@@ -2,14 +2,45 @@
 
 .items {
     width: 45rem;
-    background-color: grey;
     padding: 2rem 2rem;
     &__title {
         text-align: center;
         color: $word-color;
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
-    &__ul {
-        list-style: none;
+}
+.table {
+    border: 2px solid rgba($bc-header, 0.4);
+    border-radius: 0.8rem;
+    padding: 0;
+    &__header{
+        background-color: rgb(88, 81, 81, 0.8);
+        &-tr {
+            font-size: 1.7rem;
+            color: rgb(231, 218, 218);
+            font-family: $font-title;
+            text-shadow: 1px 1px 2px black;
+        }
+        
+        & th {
+            padding: 1rem 1rem;
+            
+            &:first-child {
+                border-radius: 6px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 6px 0 0;
+            }
+        }
+        
+    }
+}
+.table__footer {
+    background-color: rgb(88, 81, 81, 0.8);
+    font-size: 1.4rem;
+    & td {
+        padding: 1rem 2rem;
+        color: rgb(231, 218, 218);
+        text-shadow: 1px 1px 2px black;
     }
 }

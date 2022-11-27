@@ -1,0 +1,17 @@
+@import '../../../variable.scss';
+
+.table__tr {
+    background-color: rgba($birus-color, 0.8);
+    font-size: 1.5rem;
+    color: rgb(233, 222, 216);
+}
+.table__td {
+    padding: 1rem 0.5rem;
+    &-finance {
+        background-color: $title-color;
+    }
+    &-index {
+        text-align: center;
+        background-color: $birus-color;
+    }
+}

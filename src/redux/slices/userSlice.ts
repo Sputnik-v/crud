@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { PayloadAction } from '@reduxjs/toolkit';
+//import type { PayloadAction } from '@reduxjs/toolkit';
 
 export interface User {
     fullName: string;
@@ -37,11 +37,11 @@ export const userSlice = createSlice({
     name: 'users',
     initialState,
     reducers: {
-        renameUserOne: (state, action:PayloadAction<string>) => {
-            state[0].fullName = action.payload;
-        }
+        // addNewUser: (state, action:PayloadAction<string>) => {
+        //     state.push(action)
+        // }
     }
 })
 
-export const {renameUserOne} = userSlice.actions;
+//export const {addNewUser} = userSlice.actions;
 export default userSlice.reducer;
