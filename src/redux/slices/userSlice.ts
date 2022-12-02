@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-//import type { PayloadAction } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
 
 export interface User {
     fullName: string;
-    gender: 'male' | 'female';
+    gender: string;
     jobType: string;
     country: string;
     finance: string;
@@ -37,11 +37,12 @@ export const userSlice = createSlice({
     name: 'users',
     initialState,
     reducers: {
-        // addNewUser: (state, action:PayloadAction<string>) => {
-        //     state.push(action)
-        // }
+        addNewUser: (state, action: PayloadAction<User>) => {
+            state.push(action.payload);
+        }
+        
     }
 })
 
-//export const {addNewUser} = userSlice.actions;
+export const {addNewUser} = userSlice.actions;
 export default userSlice.reducer;

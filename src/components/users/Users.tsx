@@ -7,7 +7,7 @@ import './users.scss';
 
 const Users = () => {
 
-    const users = useSelector((state: RootState) => state.userSlice);
+    const users = useSelector((state: RootState) => state.users);
     //const dispatch = useDispatch();
 
     return (
